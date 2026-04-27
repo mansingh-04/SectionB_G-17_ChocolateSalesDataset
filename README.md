@@ -9,7 +9,7 @@
 
 | Step | Action |
 |------|--------|
-| 1 | Ensure all five raw CSVs are downloaded from the links in `data/raw/raw.md` and placed inside `data/raw/` |
+| 1 | Download all five raw CSVs from the links in `data/raw/raw.md` and place them inside `data/raw/` |
 | 2 | Complete the notebooks in order: `01` → `05` |
 | 3 | Publish the final Tableau dashboard and add the public link in `tableau/dashboard_links.md` |
 | 4 | Export the final report and presentation as PDFs into `reports/` |
@@ -219,7 +219,7 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Status | Purpose |
 |------|--------|---------|
@@ -287,7 +287,7 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## 🧑‍💻 Contribution Matrix
+## Contribution Matrix
 
 > This table must match evidence in GitHub Insights, PR history, and committed files.
 
@@ -308,7 +308,7 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## 🎓 Academic Integrity
+## Academic Integrity
 
 All analysis, code, and recommendations in this repository must be the original work of the team listed above. Free-riding is tracked via GitHub Insights and pull request history. Any mismatch between the contribution matrix and actual commit history may result in individual grade adjustments.
 

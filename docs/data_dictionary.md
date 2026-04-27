@@ -96,7 +96,7 @@
 | Column Name | Data Type | Description | Example Value | Used In | Cleaning Notes |
 |-------------|-----------|-------------|---------------|---------|----------------|
 | `Date` | date | Calendar date; primary key of the date dimension | `2023-03-15` | EDA / KPI / Tableau | Parsed to `datetime64`. Verified continuous date range with no gaps. |
-| `Month` | string / int | Month number or abbreviated month name | `3` or `Mar` | EDA / KPI / Tableau | Standardised to integer month number for sorting; Month name retained as label. |
+| `Month` | string / int | Month number or abbreviated month name | `3` or `Mar` | EDA / KPI / Tableau | Standardised to integer month number for sorting; month name retained as label. |
 | `Year` | int | Calendar year | `2023` | EDA / KPI / Tableau | Verified range. Used for YoY comparisons. |
 | `Quarter` | string | Quarter label | `Q1` | EDA / KPI / Tableau | Derived from `Month` if not present. Standardised to `Q1`–`Q4` format. |
 | `Weekday` | string | Day-of-week name | `Wednesday` | EDA | Standardised to full weekday name. Used for day-of-week sales pattern analysis. |
@@ -151,9 +151,9 @@ calender.csv (Date)
 sales.csv ◄──────── customers.csv (CustomerID)
 (Fact Table)
         │
-        │ ProductID          StoreID
-        ▼                       ▼
-products.csv              stores.csv
+        ├── ProductID ──► products.csv
+        │
+        └── StoreID ────► stores.csv
 ```
 
 All joins are **left joins** from `sales.csv` to preserve the full transaction record, with unmatched dimension keys logged and handled as described in the Data Quality Notes above.
