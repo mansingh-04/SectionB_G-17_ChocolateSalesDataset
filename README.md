@@ -1,11 +1,11 @@
-# 🍫 SectionB\_G-17 — Chocolate Sales Dataset
+# SectionB\_G-17 — Chocolate Sales Dataset
 
 > **NST DVA Capstone 2** | Newton School of Technology · Data Visualization & Analytics
 > A 2-week industry simulation converting raw chocolate retail data into actionable business intelligence using Python, GitHub, and Tableau.
 
 ---
 
-## ⚡ Before You Start
+## Before You Start
 
 | Step | Action |
 |------|--------|
@@ -16,7 +16,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 **Working locally:**
 
@@ -35,7 +35,7 @@ jupyter notebook
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 | Field | Details |
 |-------|---------|
@@ -49,13 +49,12 @@ jupyter notebook
 
 ---
 
-## 👥 Team Members
+## Team Members
 
 | Role | Name | GitHub Username |
 |------|------|-----------------|
 | Project Lead | Name | github-handle |
 | Data Lead | Name | github-handle |
-| ETL Lead | Name | github-handle |
 | Analysis Lead | Name | github-handle |
 | Visualization Lead | Name | github-handle |
 | Strategy Lead | Name | github-handle |
@@ -63,23 +62,23 @@ jupyter notebook
 
 ---
 
-## 💼 Business Problem
+## Business Problem
 
 The global chocolate confectionery market is highly competitive, with sales performance varying significantly across geographies, product lines, store formats, and customer segments. Retail decision-makers need a clear, data-driven picture of where revenue is being generated, which products are underperforming, and which customer segments drive the most value — without wading through raw spreadsheets.
 
 This project transforms five interconnected raw datasets (sales transactions, product catalogue, store master, customer demographics, and calendar) into a unified analytical pipeline that surfaces the KPIs a regional sales director would act upon.
 
-### 🎯 Core Business Question
+### Core Business Question
 
 > **Which combination of product category, store type, and customer segment drives the highest revenue per transaction — and where are the biggest untapped growth opportunities across the portfolio?**
 
-### ✅ Decision Supported
+### Decision Supported
 
 The analysis enables the regional sales director to reallocate promotional budgets toward the highest-ROI product-store-customer combinations, discontinue or reposition low-performing SKUs, and prioritise expansion in high-potential store clusters.
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 | Attribute | Details |
 |-----------|---------|
@@ -91,7 +90,7 @@ The analysis enables the regional sales director to reallocate promotional budge
 | **Time Period Covered** | As per `calender.csv` date range |
 | **Format** | CSV |
 
-### 🔑 Key Columns Used
+### Key Columns Used
 
 | Column Name | Source File | Description | Role in Analysis |
 |-------------|-------------|-------------|-----------------|
@@ -111,7 +110,7 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 ---
 
-## 📊 KPI Framework
+## KPI Framework
 
 | KPI | Definition | Formula / Computation |
 |-----|-----------|----------------------|
@@ -129,7 +128,7 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 ---
 
-## 📈 Tableau Dashboard
+## Tableau Dashboard
 
 | Item | Details |
 |------|---------|
@@ -142,7 +141,7 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 > *(To be completed after analysis. Each insight should tell the reader **what to act on**, not just describe a chart.)*
 
@@ -157,7 +156,7 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 ---
 
-## 🎯 Recommendations
+## Recommendations
 
 | # | Insight Addressed | Recommendation | Expected Impact |
 |---|-------------------|---------------|----------------|
@@ -169,7 +168,7 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 SectionB_G-17_ChocolateSalesDataset/
@@ -200,16 +199,13 @@ SectionB_G-17_ChocolateSalesDataset/
 │   ├── project_report_template.md
 │   └── presentation_outline.md
 │
-├── docs/
-│   └── data_dictionary.md               # Full column definitions & cleaning notes
-│
-├── DVA-oriented-Resume/
-└── DVA-focused-Portfolio/
+└── docs/
+    └── data_dictionary.md               # Full column definitions & cleaning notes
 ```
 
 ---
 
-## 🔄 Analytical Pipeline
+## Analytical Pipeline
 
 ```
 1. DEFINE     →  Sector scoped (Chocolate Retail), business question defined, mentor approved
@@ -223,21 +219,21 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Status | Purpose |
 |------|--------|---------|
-| Python + Jupyter Notebooks | ✅ Mandatory | ETL, cleaning, EDA, KPI computation |
-| Google Colab | ✔️ Supported | Cloud notebook execution |
-| Tableau Public | ✅ Mandatory | Dashboard design, publishing & sharing |
-| GitHub | ✅ Mandatory | Version control, collaboration, contribution audit |
-| SQL | ⚙️ Optional | Initial data extraction only, if documented |
+| Python + Jupyter Notebooks | Mandatory | ETL, cleaning, EDA, KPI computation |
+| Google Colab | Supported | Cloud notebook execution |
+| Tableau Public | Mandatory | Dashboard design, publishing & sharing |
+| GitHub | Mandatory | Version control, collaboration, contribution audit |
+| SQL | Optional | Initial data extraction only, if documented |
 
 **Recommended Python libraries:** `pandas` · `numpy` · `matplotlib` · `seaborn` · `scipy` · `statsmodels`
 
 ---
 
-## 🏆 Evaluation Rubric
+## Evaluation Rubric
 
 | Area | Marks | Focus |
 |------|-------|-------|
@@ -253,7 +249,7 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## ✅ Submission Checklist
+## Submission Checklist
 
 ### GitHub Repository
 - [ ] Public repository with correct naming convention (`SectionB_G-17_ChocolateSalesDataset`)
@@ -291,7 +287,7 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## 🧑‍💻 Contribution Matrix
+## Contribution Matrix
 
 > This table must match evidence in GitHub Insights, PR history, and committed files.
 
@@ -312,7 +308,7 @@ SectionB_G-17_ChocolateSalesDataset/
 
 ---
 
-## 🎓 Academic Integrity
+## Academic Integrity
 
 All analysis, code, and recommendations in this repository must be the original work of the team listed above. Free-riding is tracked via GitHub Insights and pull request history. Any mismatch between the contribution matrix and actual commit history may result in individual grade adjustments.
 
