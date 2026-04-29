@@ -43,9 +43,9 @@ jupyter notebook
 | **Sector** | Retail / FMCG (Fast-Moving Consumer Goods) |
 | **Team ID** | G-17 |
 | **Section** | Section B |
-| **Faculty Mentor** | To be filled by team |
-| **Institute** | Newton School of Technology |
-| **Submission Date** | To be filled by team |
+| **Faculty Mentor** | Satyaki Sir |
+| **Institute** | Rishihood University |
+| **Submission Date** | 29th April 2026 |
 
 ---
 
@@ -53,12 +53,12 @@ jupyter notebook
 
 | Role | Name | GitHub Username |
 |------|------|-----------------|
-| Project Lead | Name | github-handle |
-| Data Lead | Name | github-handle |
-| Analysis Lead | Name | github-handle |
-| Visualization Lead | Name | github-handle |
-| Strategy Lead | Name | github-handle |
-| PPT & Quality Lead | Name | github-handle |
+| Project Lead | Yashkumar Nimje | https://github.com/WizardCarp85|
+| Data Lead | Shane Joseph | https://github.com/sumnlikeshane |
+| Strategy Lead | Manpreet Singh | https://github.com/mansingh-04 |
+| Analysis Lead | Shivansh Upadhyay | https://github.com/shivansh0536 |
+| Visualization Lead | Saksham Narotra | github-handle |
+| PPT & Analysis Lead | Ashar Shaikh | https://github.com/Ashar-Asif-Shaikh |
 
 ---
 
@@ -145,14 +145,14 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 > *(To be completed after analysis. Each insight should tell the reader **what to act on**, not just describe a chart.)*
 
-1. **Insight 1** — *(e.g., Dark Chocolate drives 42 % of total revenue despite being 28 % of SKUs — prioritise shelf space.)*
-2. **Insight 2** — *(e.g., Repeat customers account for 61 % of revenue but represent only 38 % of the customer base.)*
-3. **Insight 3** — *(e.g., The North-East region records 23 % higher AOV, suggesting premium pricing headroom.)*
-4. **Insight 4** — *(e.g., Q4 accounts for 38 % of annual revenue — inventory planning must front-load Q3.)*
-5. **Insight 5** — *(e.g., Female customers in the 25–34 age band show the highest average spend per visit.)*
-6. **Insight 6** — *(e.g., Three SKUs with negative gross margin are still active — immediate discontinuation saves cost.)*
-7. **Insight 7** — *(e.g., Stores with in-store promotions record 2.1× higher basket size.)*
-8. **Insight 8** — *(e.g., White Chocolate category is declining MoM over the last 6 months — reformulation or phaseout warranted.)*
+1. **Discounts Significantly Impact Profit Margins** — Discounts erode profit margins; current strategy needs optimization to balance volume and margin.
+2. **Product Category Performance Varies Significantly** — Inventory and marketing resources should be allocated based on category profitability and demand.
+3. **Revenue Distribution is Geographically Uneven** — Revenue concentration varies significantly across countries, indicating market penetration variations or operational challenges.
+4. **Customer Demographics Show Store Type Preferences** — Different customer segments (gender/age) prefer different shopping channels.
+5. **Seasonal Demand Patterns are Pronounced** — Strong seasonal patterns with Q4 peaks and Q1 troughs mean operational planning must align with demand cycles.
+6. **Average Order Value Indicates Upselling Opportunity** — Right-skewed revenue distribution with many small transactions suggests bundling could increase revenue.
+7. **Profit Margin Variability Indicates Pricing Inconsistency** — Profit margins vary significantly across transactions and categories, possibly eroding competitiveness.
+8. **Loyalty Program Participation is Balanced** — ~50% of customers are loyalty members, presenting an opportunity to convert non-members and increase member value.
 
 ---
 
@@ -160,11 +160,11 @@ The analysis enables the regional sales director to reallocate promotional budge
 
 | # | Insight Addressed | Recommendation | Expected Impact |
 |---|-------------------|---------------|----------------|
-| 1 | Dark Chocolate revenue concentration | Increase Dark Chocolate SKU count and shelf prominence in top 20 % stores | +8–12 % category revenue in 2 quarters |
-| 2 | Repeat customer value | Launch targeted loyalty programme for high-frequency buyers | +15 % retention, +10 % revenue per customer |
-| 3 | North-East premium AOV | Pilot premium gifting bundles exclusively in North-East stores | +5 % AOV region-wide |
-| 4 | Q4 revenue spike | Build 6-week pre-Q4 inventory buffer; negotiate supplier capacity by August | Eliminate Q4 stockouts (~3 % lost revenue) |
-| 5 | Negative-margin SKUs | Immediately discontinue or reprice the 3 identified loss-making SKUs | Direct COGS saving of estimated ₹X per quarter |
+| 1 | Discounts Impact Profit Margins | Implement Data-Driven Discount Optimization (dynamic, tiered, targeted) | Maintain or increase sales volume; improve overall profit margin by 5-10% |
+| 2 | Seasonal and Regional Demand | Align Inventory with Seasonal and Regional Demand Patterns (build buffer before Q4, safety stock) | Reduce stockouts during peak by 20-30%; reduce carrying costs by 15-20% |
+| 3 | Product Category Performance | Develop Category-Based Assortment Strategy (expand SKUs in high-margin categories, rationalize underperformers) | Increase category revenue by 10-15%; improve overall margins by 3-5% |
+| 4 | Customer Demographics & Loyalty | Implement Customer Segmentation for Targeted Marketing (channel-specific campaigns, retention/acquisition) | Improve marketing ROI by 20-30%; increase loyalty retention by 10-15% |
+| 5 | Upselling Opportunity | Deploy Upselling and Bundling Strategies (gift sets, POS prompts, volume discounts) | Increase average order value by 15-20% |
 
 ---
 
@@ -174,11 +174,16 @@ The analysis enables the regional sales director to reallocate promotional budge
 SectionB_G-17_ChocolateSalesDataset/
 │
 ├── README.md                            # ← You are here
+├── requirements.txt                     # Python dependencies
 │
 ├── data/
 │   ├── raw/                             # Original CSVs (never edited)
 │   │   └── raw.md                       # Google Drive download links
 │   └── processed/                       # Cleaned output from ETL pipeline
+│       └── processed.md                 # Details on processed data
+│
+├── docs/
+│   └── data_dictionary.md               # Full column definitions & cleaning notes
 │
 ├── notebooks/
 │   ├── 01_extraction.ipynb              # Data sourcing & loading
@@ -187,20 +192,22 @@ SectionB_G-17_ChocolateSalesDataset/
 │   ├── 04_statistical_analysis.ipynb    # Statistical tests & KPI computation
 │   └── 05_final_load_prep.ipynb         # Final dataset for Tableau
 │
-├── scripts/
-│   └── etl_pipeline.py                  # Reusable ETL pipeline
+├── reports/
+│   ├── Report_G17_DVA.docx              # Final project report
+│   └── Chocolate_Sales_Performance_Analysis.pptx # Final presentation deck
 │
 ├── tableau/
-│   ├── screenshots/                     # Dashboard screenshots
-│   └── dashboard_links.md               # Tableau Public URLs
+│   ├── Chocolate_Sales_G17.twbx         # Tableau workbook
+│   ├── dashboard_links.md               # Tableau Public URLs
+│   └── screenshots/                     # Dashboard screenshots
+│       ├── Customer Dashboard.png
+│       ├── Sales Dashboard.png
+│       └── Stores Dashboard.png
 │
-├── reports/
-│   ├── README.md
-│   ├── project_report_template.md
-│   └── presentation_outline.md
+├── DVA-oriented-Resume/                 # Team member resumes
 │
-└── docs/
-    └── data_dictionary.md               # Full column definitions & cleaning notes
+└── DVA-focused-Portfolio/               # Portfolio details
+    └── resume.md
 ```
 
 ---
@@ -293,18 +300,18 @@ SectionB_G-17_ChocolateSalesDataset/
 
 | Team Member | Dataset & Sourcing | ETL & Cleaning | EDA & Analysis | Statistical Analysis | Tableau Dashboard | Report Writing | PPT & Viva |
 |------------|-------------------|---------------|---------------|---------------------|------------------|---------------|-----------|
-| Member 1 | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support |
-| Member 2 | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support |
-| Member 3 | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support |
-| Member 4 | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support |
-| Member 5 | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support |
-| Member 6 | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support | Owner / Support |
+| Yashkumar Nimje | Medium | Low | Low | Low | Medium | Low | Low |
+| Shane Joseph | Low | Medium | Medium | Low | Low | Medium | Low |
+| Manpreet Singh | Low | Low | Low | Low | Medium | Low | Low |
+| Shivansh Upadhyay | Low | Low | Medium | Medium | Low | Low | Low |
+| Saksham Narotra | Low | Low | Low | Low | Low | Low | Medium |
+| Ashar Shaikh | Low | Low | Low | Low | Low | Low | Medium |
 
 > **Declaration:** We confirm that the above contribution details are accurate and verifiable through GitHub Insights, PR history, and submitted artifacts.
 >
-> **Team Lead Name:** _____________________________
+> **Team Lead Name:** Yashkumar Nimje
 >
-> **Date:** _______________
+> **Date:** 29th April 2026
 
 ---
 
