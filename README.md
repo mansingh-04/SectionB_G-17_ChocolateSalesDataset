@@ -301,8 +301,8 @@ SectionB_G-17_ChocolateSalesDataset/
 | Team Member | Dataset & Sourcing | ETL & Cleaning | EDA & Analysis | Statistical Analysis | Tableau Dashboard | Report Writing | PPT & Viva |
 |------------|-------------------|---------------|---------------|---------------------|------------------|---------------|-----------|
 | Yashkumar Nimje | Medium | Low | Low | Low | Medium | Low | Low |
-| Shane Joseph | Low | Medium | Medium | Low | Low | Medium | Low |
-| Manpreet Singh | Low | Low | Low | Low | Medium | Low | Low |
+| Shane Joseph | Low | Medium | Low | Low | Low | Medium | Low |
+| Manpreet Singh | Low | Low | Low | Medium | Medium | Low | Low |
 | Shivansh Upadhyay | Low | Low | Medium | Medium | Low | Low | Low |
 | Saksham Narotra | Low | Low | Low | Low | Low | Low | Medium |
 | Ashar Shaikh | Low | Low | Low | Low | Low | Low | Medium |
