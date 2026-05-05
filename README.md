@@ -57,7 +57,7 @@ jupyter notebook
 | Data Lead | Shane Joseph | https://github.com/sumnlikeshane |
 | Strategy Lead | Manpreet Singh | https://github.com/mansingh-04 |
 | Analysis Lead | Shivansh Upadhyay | https://github.com/shivansh0536 |
-| Visualization Lead | Saksham Narotra | github-handle |
+| Visualization Lead | Saksham Narotra |https://github.com/sakshaaamm|
 | PPT & Analysis Lead | Ashar Shaikh | https://github.com/Ashar-Asif-Shaikh |
 
 ---
